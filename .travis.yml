@@ -5,7 +5,7 @@ jdk:
 addons:
   sonarcloud:
     organization: "shockgiammy"
-    token:
+  token:
       secure: $SONAR_TOKEN
 
 script:
