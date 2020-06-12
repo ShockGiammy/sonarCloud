@@ -1,0 +1,11 @@
+language: java
+jdk:
+- openjdk8
+addons:
+ sonarcloud:
+  organization: shockgiammy
+  token:
+   secure: $SONAR_TOKEN
+script:
+- ant build
+- sonar-scanner -Dsonar.login=$SONAR_TOKEN
